@@ -26,7 +26,7 @@ You can pass some basic options:
 | Option | Default Value | Data type | Explanation |
 | --- | --- | --- | --- |
 | tooltipMarkup | `<div class="ec-tooltip-container" style="position: absolute; display: none;"></div>` | string | Used for defining the actual tooltip markup |
-| containingElement | $(body) | jQuery object | Defaults to the body of our dom model |
+| containingElement | `$(body)` | jQuery object | Defaults to the body of our dom model |
 | offsetY | -5 | int | The y offset, defaults to -5, should be obvious what it does |
 | offsetX | 20 | int | The x offset, defaults to 20, should be obvious what it does |
 | fade | false | bool | Should our tooltip fade out when our mouse leaves the element? |
