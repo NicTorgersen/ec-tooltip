@@ -27,7 +27,7 @@ You can pass some basic options:
 | --- | --- | --- | --- |
 | tooltipMarkup | `<div class="ec-tooltip-container" style="position: absolute; display: none;"></div>` | string | Used for defining the actual tooltip markup |
 | containingElement | `$(body)` | jQuery object | Defaults to the body of our dom model |
-| offsetY | -5 | int | The y offset, defaults to -5, should be obvious what it does, it's how far from the bottom of the mouse pointer the tooltip should appear |
-| offsetX | 20 | int | The x offset, defaults to 20, should be obvious what it does, it's how far from the left of the mouse pointer the tooltip should appear |
+| offsetY | -5 | int | The y offset, defaults to -5. The default is a little bit above the mouse pointer, since I use the css rule `top` to define the tooltip's position |
+| offsetX | 20 | int | The x offset, defaults to 20. It's how far from the left of the mouse pointer the tooltip should appear |
 | fade | false | bool | Should our tooltip fade out when our mouse leaves the element? |
 | fadeTimer | 0 | int | This describes, in milliseconds, how long it should take for the element to disappear completely when fade is set to true |
