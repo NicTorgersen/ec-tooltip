@@ -5,14 +5,14 @@
 ec-tooltip is the most barebones jQuery tooltip you can get your hands on.
 It's very easy to use:
 
-```
+```html
 <!-- the html -->
 <div class="some-container">
     <!-- obviously this can be an element with whatever class you wish, ec-tooltip ain't showing no disrespect -->
     <p class="element-with-tooltip" data-ec-text="This is a tooltip">This is an element with a tooltip.</p>
 </div>
 ```
-```
+```javascript
 // the initialization
 $(document).ready(function () {
     var options = {};
