@@ -34,7 +34,7 @@
         }
 
         element.on('mouseenter', function (evt) {
-            return move(evt);
+            return enter(evt);
         });
         element.on('mousemove', function (evt) {
             return move(evt);
