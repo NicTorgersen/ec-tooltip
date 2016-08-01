@@ -3,7 +3,7 @@
 
         var opts = $.extend({
             tooltipMarkup: '<div class="ec-tooltip-container" style="position: absolute; display: none;"></div>',
-            containingElement: $('body'),
+            containingElement: 'body',
             offsetY: -5,
             offsetX: 20,
             fade: false,
@@ -12,7 +12,7 @@
         var element = $(this);
         var tooltip = $(opts.tooltipMarkup);
 
-        opts.containingElement.append(tooltip);
+        $(opts.containingElement).append(tooltip);
 
         function enter (evt, text) {
             tooltip.text(text);
