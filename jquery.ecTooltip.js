@@ -11,19 +11,18 @@
         }, options);
         var element = $(this);
         var tooltip = $(opts.tooltipMarkup);
-        var tooltipText = element.data('ec-text') || element.text();
 
-        tooltip.text(tooltipText);
         opts.containingElement.append(tooltip);
 
-        function enter (evt) {
+        function enter (evt, text) {
+            tooltip.text(text);
             tooltip.show();
-            tooltip.css({ top: evt.offsetY + opts.offsetY, left: evt.offsetX + opts.offsetX });
+            tooltip.css({ top: evt.pageY + opts.offsetY, left: evt.pageX + opts.offsetX });
         }
 
         function move (evt) {
             tooltip.show();
-            tooltip.css({ top: evt.offsetY + opts.offsetY, left: evt.offsetX + opts.offsetX });
+            tooltip.css({ top: evt.pageY + opts.offsetY, left: evt.pageX + opts.offsetX });
         }
 
         function leave() {
@@ -33,14 +32,19 @@
             return tooltip.css({ display: 'none' });
         }
 
-        element.on('mouseenter', function (evt) {
-            return move(evt);
+        element.each(function (idx, el) {
+            var el = $(el),
+                text = el.data('ec-text') || element.text();
+            el.on('mouseenter', function (evt) {
+                return enter(evt, text);
+            });
+            el.on('mousemove', function (evt) {
+                return move(evt);
+            });
+            el.on('mouseleave', function () {
+                return leave();
+            });
         });
-        element.on('mousemove', function (evt) {
-            return move(evt);
-        });
-        element.on('mouseleave', function () {
-            return leave();
-        });
+
     }
 }(jQuery));

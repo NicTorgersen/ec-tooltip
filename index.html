@@ -3,18 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>ec-tooltip</title>
+        <style media="screen">
+            .ec-tooltip-container {
+                display: block;
+                padding: 10px;
+                background-color: #e8e8e8;
+                border: 2px solid #dddddd;
+            }
+            .container p {
+                display: inline-block;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
             <p class="tooltipThis" data-ec-text="This is a tooltip with some text">This text has a tooltip</p>
         </div>
+        <!-- <div class="container">
+            <p class="tooltipThis" data-ec-text="This is another tooltip with some text">This text has a tooltip</p>
+        </div> -->
         <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
         <script src="jquery.ecTooltip.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $('.tooltipThis').ecTooltip({
-                fade: true,
-                fadeTimer: 500,
-            });
+            $('.tooltipThis').ecTooltip();
         </script>
     </body>
 </html>
