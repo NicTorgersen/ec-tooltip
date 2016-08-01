@@ -32,6 +32,7 @@
             return tooltip.css({ display: 'none' });
         }
 
+<<<<<<< HEAD
         element.each(function (idx, el) {
             var el = $(el),
                 text = el.data('ec-text') || element.text();
@@ -44,6 +45,16 @@
             el.on('mouseleave', function () {
                 return leave();
             });
+=======
+        element.on('mouseenter', function (evt) {
+            return enter(evt);
+        });
+        element.on('mousemove', function (evt) {
+            return move(evt);
+        });
+        element.on('mouseleave', function () {
+            return leave();
+>>>>>>> e525318a924130115adcb688c6313adad7b835ca
         });
 
     }
