@@ -1,0 +1,25 @@
+{
+  "name": "ec-tooltip",
+  "homepage": "https://github.com/NicTorgersen/ec-tooltip",
+  "authors": [
+    "Nic post@echow.io"
+  ],
+  "description": "jQuery plugin for displaying tooltips",
+  "main": "",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "tooltip"
+  ],
+  "license": "CC BY-SA 4.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
