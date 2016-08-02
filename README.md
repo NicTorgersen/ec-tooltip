@@ -5,6 +5,14 @@
 ec-tooltip is the most barebones jQuery tooltip you can get your hands on.
 It's very easy to use:
 
+# Install
+From bower:
+`bower install ec-tooltip`
+
+Or download the jquery.ecTooltip.js file and include it in your html document
+`<script src="/path/to/jquery.ecTooltip.js" type="text/javascript"></script>`
+
+# Usage
 ```html
 <!-- the html -->
 <div class="some-container">
