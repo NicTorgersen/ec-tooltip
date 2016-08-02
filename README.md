@@ -10,6 +10,7 @@ From bower:
 `bower install ec-tooltip`
 
 Or download the jquery.ecTooltip.js file and include it in your html document
+
 `<script src="/path/to/jquery.ecTooltip.js" type="text/javascript"></script>`
 
 # Usage
