@@ -1,7 +1,5 @@
 # ec-tooltip
 
-*Let's see how far we can get with creating this thing.*
-
 ec-tooltip is the most barebones jQuery tooltip you can get your hands on.
 It's very easy to use:
 
